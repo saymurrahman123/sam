@@ -1,0 +1,81 @@
+*{
+
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+
+}
+
+body {
+background: url('image/bg.jpg');
+background-size: cover;
+color:bisque;
+}
+
+.registration-form{
+
+    position :absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+}
+
+.registration-form h2 {
+
+font-size: 35px;  
+text-align: center;
+text-transform: uppercase;
+margin: 40px 0;
+
+display: inline-block;
+
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+  }
+  
+  .input-group input[type="text"],
+  .input-group input[type="email"],
+  .input-group input[type="password"],
+  .input-group input[type="date"] {
+    width: 200px;
+    margin-right: 10px;
+  }
+  
+  .error-msg {
+    color: red;
+    font-size: 0.9em;
+    white-space: nowrap;
+  }
+  
+
+.registration-form tr {
+
+    font-size: 20px;
+    margin: 15px 0;
+    
+    }
+
+    .registration-form button {
+
+        font-size: 30px;
+        font-weight: bold;
+        margin: 20px 0;
+        padding: 10px 15px;
+        width: 50%;
+        background-color: sienna;
+        border: 5;
+        border-radius: 20px;
+
+
+        
+        
+        }
+
+        .registration-form button:hover{
+
+            color:green;
+        }
