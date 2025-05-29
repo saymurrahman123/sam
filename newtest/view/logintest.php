@@ -1,4 +1,6 @@
 <?php
+include 'index.php';
+session_start();
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
@@ -19,10 +21,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $data = $stmt_result->fetch_assoc();
             // Use password_verify if password is hashed
             if ($data['password'] === $password) {
-                echo "<h2>Login successful</h2>";
-            } else {
+              header("Location: index.php");
+              exit(); } else 
+              {
                 echo "<h2>Invalid password</h2>";
             }
+
+             $_SESSION['email']=$row['email'];
+
+
         } else {
             echo "<h2>No user found with that email</h2>";
         }
